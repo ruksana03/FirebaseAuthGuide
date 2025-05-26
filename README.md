@@ -20,7 +20,7 @@ A **schema** in PostgreSQL  is a logical namespace that organizes database objec
 - Avoid name conflicts (e.g. same table name in different schemas)
 - Strengthen security with schema-level permissions
 
-**Example**:
+***Example***:
 ```sql
 CREATE SCHEMA hr;
 
@@ -36,6 +36,7 @@ CREATE TABLE hr.employees (
 Primary Key:
 A primary key uniquely identifies each row in a table. It must be unique and not null.
 
+***Example***:
 ```sql
 CREATE TABLE departments (
     dept_id SERIAL PRIMARY KEY,
@@ -47,6 +48,7 @@ Foreign Key:
 
 A foreign key establishes a relationship between two tables by referring to a primary key in another table.
 
+***Example***:
 ```sql
 CREATE TABLE employees (
     emp_id SERIAL PRIMARY KEY,
@@ -67,6 +69,7 @@ CHAR(n) always stores n characters (padding if shorter)
 
 VARCHAR(n) stores only as many characters as needed (up to n)
 
+***Example***:
 ```sql
 -- Flexible string
 name VARCHAR(50)
@@ -106,7 +109,7 @@ Aggregate functions compute a single result from a set of input values. These fu
 | `MAX()`  | Finds the highest value     |
 | `MIN()`  | Finds the lowest value      |
 
-####  Examples:
+***Example***:
 
 ```sql
 -- Total number of employees
