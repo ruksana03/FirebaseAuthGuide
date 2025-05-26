@@ -80,12 +80,14 @@ code CHAR(3)
 
 The **WHERE** clause filters rows returned by a **SELECT** query based on specified conditions.
 
+***Syntax:***
+
 ```sql
 SELECT column1, column2
 FROM table
 WHERE condition;
 ```
-
+***Example:***
 ```sql
 SELECT name, department
 FROM employees
