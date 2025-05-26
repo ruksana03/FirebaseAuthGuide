@@ -36,22 +36,24 @@ CREATE TABLE hr.employees (
 Primary Key:
 A primary key uniquely identifies each row in a table. It must be unique and not null.
 
+```sql
 CREATE TABLE departments (
     dept_id SERIAL PRIMARY KEY,
     dept_name VARCHAR(50) NOT NULL
 );
-
+```
 
 Foreign Key:
 
 A foreign key establishes a relationship between two tables by referring to a primary key in another table.
 
+```sql
 CREATE TABLE employees (
     emp_id SERIAL PRIMARY KEY,
     name VARCHAR(100),
     dept_id INTEGER REFERENCES departments(dept_id)
 );
-
+```
 
 ### 10. How can you calculate aggregate functions like `COUNT()`, `SUM()`, and `AVG()` in PostgreSQL?
 
@@ -80,4 +82,4 @@ GROUP BY department;
 SELECT emp_id, SUM(sales_amount)
 FROM sales
 GROUP BY emp_id;
-
+```
