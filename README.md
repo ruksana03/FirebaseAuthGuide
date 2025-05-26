@@ -29,7 +29,7 @@ CREATE TABLE hr.employees (
     name VARCHAR(100),
     department VARCHAR(50)
 );
-
+```
 
 ### 3. Explain the Primary Key and Foreign Key concepts in PostgreSQL.
 
