@@ -55,6 +55,43 @@ CREATE TABLE employees (
 );
 ```
 
+### 4. What is the difference between the VARCHAR and CHAR data types?
+
+| Type      | Description                             |
+| --------- | --------------------------------------- |
+| `VARCHAR` | Variable-length character string        |
+| `CHAR`    | Fixed-length string, padded with spaces |
+
+Key Differences:
+CHAR(n) always stores n characters (padding if shorter)
+
+VARCHAR(n) stores only as many characters as needed (up to n)
+
+```sql
+-- Flexible string
+name VARCHAR(50)
+
+-- Fixed format code
+code CHAR(3)
+```
+
+
+### 5. Explain the purpose of the WHERE clause in a SELECT statement.
+
+The **WHERE** clause filters rows returned by a **SELECT** query based on specified conditions.
+
+```sql
+SELECT column1, column2
+FROM table
+WHERE condition;
+```
+
+```sql
+SELECT name, department
+FROM employees
+WHERE department = 'Sales';
+```
+
 ### 10. How can you calculate aggregate functions like `COUNT()`, `SUM()`, and `AVG()` in PostgreSQL?
 
 Aggregate functions compute a single result from a set of input values. These functions are essential for reporting, analytics, and summarizing data in PostgreSQL.
